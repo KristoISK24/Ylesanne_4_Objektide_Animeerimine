@@ -15,7 +15,7 @@ bg = pygame.image.load("bg_rally.jpg")
 red_car = pygame.image.load("f1_red.png")
 blue_car = pygame.image.load("f1_blue.png")
 
-# Red auto algpositsioon
+# Punase auto algpositsioon
 red_x = WIDTH // 2 - red_car.get_width() // 2
 red_y = HEIGHT - red_car.get_height() - 30
 
@@ -59,7 +59,7 @@ while running:
         if car["y"] > HEIGHT:
             car["y"] = random.randint(-400, -100)
             car["x"] = random.randint(100, WIDTH - 100)
-            score += 1  # punkt lisandub
+            score += 1  
 
     # Skoori kuvamine
     score_text = font.render("Skoor: " + str(score), True, (255, 255, 255))
